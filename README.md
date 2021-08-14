@@ -1,5 +1,7 @@
 # agma-chat-command-settings
 
+Configure your settings using the chat.
+
 ## In-Game Usage
 
 
