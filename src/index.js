@@ -11,10 +11,6 @@ const script = createScript(
   },
   {
     chatElementSelector: "#chtbox",
-    /**
-     * Remember to put this to `false` when releasing to production.
-     */
-    exposeToWindowObject: true,
   }
 );
 
