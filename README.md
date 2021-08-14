@@ -5,9 +5,13 @@ Configure your settings using the chat.
 ## In-Game Usage
 
 
+```bash
+/setting <settingName> [on/off]
+# OR
+/s <settingName> [on/off]
 ```
-/setting {settingName} on/off
-```
+
+If you don't include `on/off` it will tell you the current value.
 
 ## Available Settings
 
