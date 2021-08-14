@@ -1,0 +1,19 @@
+{
+  "name": "agma-chat-command-settings",
+  "version": "2.0.0",
+  "description": "Configure your settings using the chat.",
+  "main": "src/index.js",
+  "author": "CodingWithNuke",
+  "scripts": {
+    "build": "browserify src/index.js > dist/build.js",
+    "build:tiny": "browserify -p tinyify src/index.js > dist/build.js"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "tinyify": "^3.0.0"
+  },
+  "dependencies": {
+    "@agmajs/alert": "^0.0.8",
+    "@agmajs/script": "^0.0.9"
+  }
+}
