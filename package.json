@@ -1,6 +1,6 @@
 {
   "name": "agma-chat-command-settings",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Configure your settings using the chat.",
   "main": "src/index.js",
   "author": "CodingWithNuke",
@@ -14,6 +14,6 @@
   },
   "dependencies": {
     "@agmajs/alert": "^0.0.8",
-    "@agmajs/script": "^0.0.9"
+    "@agmajs/script": "^0.0.12"
   }
 }
