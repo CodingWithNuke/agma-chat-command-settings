@@ -4,11 +4,10 @@ Configure your settings using the chat.
 
 ## In-Game Usage
 
-
 ```bash
-/setting <settingName> [on/off]
+/setting <setting-name> [on/off]
 # OR
-/s <settingName> [on/off]
+/s <setting-name> [on/off]
 ```
 
 If you don't include `on/off` it will tell you the current value.
@@ -18,19 +17,19 @@ If you don't include `on/off` it will tell you the current value.
 - `darktheme`
 - `fancygrid`
 - `sectiongrid`
-- `gridlines`
-- `skins`
-- `wearables`
-- `names`
-- `minionnames`
-- `largenames`
-- `nameoutlines`
+- `gridlines`, `gridline`
+- `skins`, `skin`
+- `wearables`, `wearable`
+- `names`, `name`
+- `minionnames`, `minionname`
+- `largenames`, `largename`
+- `nameoutlines`, `nameoutline`
 - `mass`
 - `food`
-- `cellanimations`
-- `skinanimations`
+- `cellanimations`, `cellanimation`
+- `skinanimations`, `skinanimation`
 - `mapborder`
-- `sounds`
+- `sounds`, `sound`
 - `infinitezoom`
 - `fixedzoom`
 - `slowmotion`
@@ -38,11 +37,22 @@ If you don't include `on/off` it will tell you the current value.
 - `leaderboard`
 - `chat`
 - `minimap`
-- `fps`
-- `colors`
-- `cellborders`
-- `cellspikes`
+- `fps`, `ping`, `stats`
+- `colors`, `color`, `cellcolor`, `cellcolors`
+- `cellborders`, `cellborder`
+- `cellspikes`, `cellspike`
 - `classicvirus`
-- `polygonshapes`
-- `lineshapes`
-- `bubblecells`
+- `polygonshapes`, `polygonshape`
+- `lineshapes`, `lineshape`
+- `bubblecells`, `bubblecell`
+- `onlinestatus`
+- `partyinvite`
+- `partyanimations`, `partyanimation`
+- `autofeed`
+- `goldnickname`, `goldnick`
+- `goldcrown`
+- `minionskins`, `minionskin`
+- `videoads`, `videoad`
+
+## Source Code
+https://github.com/CodingWithNuke/agma-chat-command-settings
