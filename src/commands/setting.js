@@ -2,7 +2,7 @@ const { defineCommand } = require("@agmajs/script");
 
 const { useAlert, Colors } = require("@agmajs/alert");
 
-const { availableSettings } = require('../contants')
+const { availableSettings } = require('../constants')
 
 module.exports = defineCommand({
   name: "setting",
