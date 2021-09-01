@@ -1,4 +1,4 @@
-const { defineCommand } = require("@agmajs/script");
+const { defineCommand, } = require("@agmajs/script");
 
 const { useAlert, Colors } = require("@agmajs/alert");
 

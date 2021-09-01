@@ -5,5 +5,5 @@
  */
 
 module.exports = {
-  "srcDir": "src"
+  srcDir: "src"
 }

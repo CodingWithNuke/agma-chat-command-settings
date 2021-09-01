@@ -1,19 +1,17 @@
 const { createScript } = require("@agmajs/script");
 
-const { name, version, description, author } = require('../package.json')
+const { name, version, description, author } = require("../package.json");
 
-const script = createScript(
-  {
+const script = createScript({
+  info: {
     name,
     version,
     description,
-    author
+    author,
   },
-  {
-    chatElementSelector: "#chtbox",
-    silent: true
-  }
-);
+  chatElementSelector: "#chtbox",
+  silent: true,
+});
 
 const commands = require("./commands");
 commands.forEach((command) => script.command(command.name, command));
