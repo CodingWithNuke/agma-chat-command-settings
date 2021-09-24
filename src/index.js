@@ -1,4 +1,4 @@
-const { createScript } = require("@agmajs/script");
+const { createScript } = require("io-scripts");
 
 const { name, version, description, author } = require("../package.json");
 
@@ -11,6 +11,8 @@ const script = createScript({
   },
   chatElementSelector: "#chtbox",
   silent: true,
+  exposeToWindowObject: true,
+  debug: true,
 });
 
 const commands = require("./commands");

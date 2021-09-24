@@ -1,8 +1,8 @@
-const { defineCommand, } = require("@agmajs/script");
+const { defineCommand } = require("io-scripts");
 
-const { useAlert, Colors } = require("@agmajs/alert");
+const { useAlert, Colors } = require("@io-scripts/alert");
 
-const { availableSettings } = require('../constants')
+const { availableSettings } = require("../constants");
 
 module.exports = defineCommand({
   name: "setting",
@@ -12,7 +12,9 @@ module.exports = defineCommand({
       const setting = availableSettings.find((item) => {
         if (!item) return false;
 
-        return Array.isArray(item.name) ? item.name.find(itemName => itemName == args[0]) : item.name == args[0];
+        return Array.isArray(item.name)
+          ? item.name.find((itemName) => itemName == args[0])
+          : item.name == args[0];
       });
 
       if (!setting) {
@@ -27,7 +29,8 @@ module.exports = defineCommand({
       const settingElement = document.getElementById(id);
 
       useAlert(
-        `The setting "${displayName}" is turned ${settingElement.checked ? "on" : "off"
+        `The setting "${displayName}" is turned ${
+          settingElement.checked ? "on" : "off"
         }`,
         {
           textColor: settingElement.checked ? Colors.LIME : Colors.RED,
@@ -42,7 +45,9 @@ module.exports = defineCommand({
         const setting = availableSettings.find((item) => {
           if (!item) return false;
 
-          return Array.isArray(item.name) ? item.name.find(itemName => itemName == args[0]) : item.name == args[0];
+          return Array.isArray(item.name)
+            ? item.name.find((itemName) => itemName == args[0])
+            : item.name == args[0];
         });
 
         if (!setting) {
