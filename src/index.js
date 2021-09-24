@@ -11,8 +11,6 @@ const script = createScript({
   },
   chatElementSelector: "#chtbox",
   silent: true,
-  exposeToWindowObject: true,
-  debug: true,
 });
 
 const commands = require("./commands");
