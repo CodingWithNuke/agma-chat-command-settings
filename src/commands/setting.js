@@ -19,6 +19,7 @@ module.exports = defineCommand({
 
       if (!setting) {
         useAlert(`No setting found with name "${args[0]}"`, {
+          alertElementSelector: "#curser",
           textColor: Colors.RED,
         });
         return;
@@ -33,6 +34,7 @@ module.exports = defineCommand({
           settingElement.checked ? "on" : "off"
         }`,
         {
+          alertElementSelector: "#curser",
           textColor: settingElement.checked ? Colors.LIME : Colors.RED,
         }
       );
@@ -52,6 +54,7 @@ module.exports = defineCommand({
 
         if (!setting) {
           useAlert(`No setting found with name "${args[0]}"`, {
+            alertElementSelector: "#curser",
             textColor: Colors.RED,
           });
           return;
@@ -66,6 +69,7 @@ module.exports = defineCommand({
         useAlert(
           `The setting "${displayName}" has been turned ${on ? "on" : "off"}`,
           {
+            alertElementSelector: "#curser",
             textColor: on ? Colors.LIME : Colors.RED,
           }
         );
