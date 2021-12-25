@@ -1,15 +1,15 @@
 {
   "displayName": "Agma Chat Command Settings",
   "name": "agma-chat-command-settings",
-  "version": "2.3.2",
+  "version": "2.3.4",
   "description": "Configure your settings using the chat.",
   "main": "src/index.js",
   "author": "CodingWithNuke",
   "scripts": {
-    "build": "io-scripts build src/index.js --games *://agma.io/"
+    "build": "io-scripts build src/index.js --games *://agma.io/*"
   },
   "dependencies": {
     "@io-scripts/alert": "^1.1.0",
-    "io-scripts": "^2.1.2"
+    "io-scripts": "^2.3.4"
   }
 }
