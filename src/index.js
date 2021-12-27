@@ -1,9 +1,9 @@
-const { createScript } = require("io-scripts");
+import { createScript } from "io-scripts";
 
 const script = createScript({
   chatElementSelector: "#chtbox",
   silent: true,
 });
 
-const commands = require("./commands");
+import commands from "./commands";
 commands.forEach((command) => script.command(command.name, command));

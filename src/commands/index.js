@@ -1,1 +1,3 @@
-module.exports = [require("./setting")];
+import settings from "./setting";
+
+export default [settings];

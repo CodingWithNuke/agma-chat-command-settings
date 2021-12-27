@@ -1,4 +1,4 @@
-const gameSettings = [
+const GAME_SETTINGS = [
   {
     displayName: "Dark Theme",
     name: "darktheme",
@@ -182,7 +182,7 @@ const gameSettings = [
   },
 ];
 
-const userSettings = [
+const USER_SETTINGS = [
   {
     displayName: "Online Status",
     name: "onlinestatus",
@@ -233,4 +233,4 @@ const userSettings = [
   },
 ];
 
-exports.availableSettings = [...gameSettings, ...userSettings];
+export const AVAILABLE_SETTINGS = [...GAME_SETTINGS, ...USER_SETTINGS];

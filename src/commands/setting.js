@@ -1,15 +1,15 @@
-const { defineCommand } = require("io-scripts");
+import { defineCommand } from "io-scripts";
 
-const { useAlert, Colors } = require("@io-scripts/alert");
+import { useAlert, Colors } from "@io-scripts/alert";
 
-const { availableSettings } = require("../constants");
+import { AVAILABLE_SETTINGS } from "../constants";
 
-module.exports = defineCommand({
+export default defineCommand({
   name: "setting",
   aliases: ["s"],
   run: (script, chatCtx, args) => {
     if (args.length == 1) {
-      const setting = availableSettings.find((item) => {
+      const setting = AVAILABLE_SETTINGS.find((item) => {
         if (!item) return false;
 
         return Array.isArray(item.name)
@@ -44,7 +44,7 @@ module.exports = defineCommand({
       if (args[1] == "on" || args[1] == "off") {
         const on = args[1] === "on";
 
-        const setting = availableSettings.find((item) => {
+        const setting = AVAILABLE_SETTINGS.find((item) => {
           if (!item) return false;
 
           return Array.isArray(item.name)
