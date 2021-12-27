@@ -231,6 +231,12 @@ const USER_SETTINGS = [
     function: window.setVideoAds,
     id: "cVideoAds",
   },
+  {
+    displayName: "Large Render Distance",
+    name: ["largerenderdistance", "renderdistance", "lrenderdistance"],
+    function: window.setRenderDistance,
+    id: "cRenderDistance",
+  },
 ];
 
 export const AVAILABLE_SETTINGS = [...GAME_SETTINGS, ...USER_SETTINGS];

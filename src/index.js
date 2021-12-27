@@ -1,4 +1,4 @@
-import { createScript } from "io-scripts";
+import { createScript, Command } from "io-scripts";
 
 const script = createScript({
   chatElementSelector: "#chtbox",
@@ -8,5 +8,5 @@ const script = createScript({
 import * as commands from "./commands";
 for (const name in commands) {
   const command = commands[name];
-  script.command(name, command);
+  script.command(command.name, command);
 }
