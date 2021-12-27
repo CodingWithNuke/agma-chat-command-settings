@@ -233,7 +233,7 @@ const USER_SETTINGS = [
   },
   {
     displayName: "Large Render Distance",
-    name: ["largerenderdistance", "renderdistance", "lrenderdistance"],
+    name: ["largerenderdistance", "lrenderdistance", "renderdistance"],
     function: window.setRenderDistance,
     id: "cRenderDistance",
   },
