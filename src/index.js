@@ -5,5 +5,8 @@ const script = createScript({
   silent: true,
 });
 
-import commands from "./commands";
-commands.forEach((command) => script.command(command.name, command));
+import * as commands from "./commands";
+for (const name in commands) {
+  const command = commands[name];
+  script.command(name, command);
+}

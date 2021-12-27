@@ -1,3 +1,1 @@
-import settings from "./setting";
-
-export default [settings];
+export { default as setting } from "./setting";
